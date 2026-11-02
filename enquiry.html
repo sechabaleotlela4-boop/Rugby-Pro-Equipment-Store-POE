@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit an enquiry for rugby gear, bulk orders, or specific equipment questions at RugbyPro.">
+    <meta name="keywords" content="rugby enquiry, bulk rugby order, rugby gear quote">
+    <meta name="author" content="Sechaba Leotlela">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Enquiry - RugbyPro Equipment Store</title>
+</head>
+<body>
+<header>
+    <h1>RugbyPro Equipment Store</h1>
+    <p>Contact us about our rugby equipment</p>
+</header>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="enquiry.html">Enquiry</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<main>
+    <h2>Product Enquiry</h2>
+    <p>Complete the form below if you would like more information about our products.</p>
+    
+    <!-- ADDED ID HERE -->
+    <form id="enquiryForm">
+        <label for="name">Full Name: <span class="required">*</span></label>
+        <input type="text" id="name" name="name" placeholder="e.g. John Smith" minlength="2" required>
+        
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" pattern="[0-9 +()-]{10,15}">
+        
+        <label for="product">Product Interested In: <span class="required">*</span></label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a product...</option>
+            <option value="Rugby Ball">Rugby Ball</option>
+            <option value="Rugby Boots">Rugby Boots</option>
+            <option value="Rugby Jersey">Rugby Jersey</option>
+            <option value="Protective Equipment">Protective Equipment</option>
+            <option value="Training Equipment">Training Equipment</option>
+        </select>
+        
+        <label for="message">Message: <span class="required">*</span></label>
+        <textarea id="message" name="message" placeholder="Tell us what you need and which sizes or quantities." minlength="10" required></textarea>
+        
+        <button type="submit">Submit Enquiry</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2026 RugbyPro Equipment Store</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
